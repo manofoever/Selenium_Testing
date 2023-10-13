@@ -30,8 +30,17 @@ public class App
     	WebDriverManager.chromedriver().setup();
     	
     	
+    	
+    	
     	ChromeOptions chromeOptions = new ChromeOptions();
+    	
+    	
+    	
     	chromeOptions.addArguments("--headless");
+    	chromeOptions.addArguments("--disable-dev-shm-usage");
+    	chromeOptions.addArguments("--ignore-ssl-errors=yes");
+    	chromeOptions.addArguments("--ignore-certificate-errors");
+    	
     	
     	//Initialize the driver
     	
