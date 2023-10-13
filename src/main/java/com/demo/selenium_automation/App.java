@@ -1,5 +1,6 @@
 package com.demo.selenium_automation;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -15,7 +16,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class App 
 {
-    public static void main( String[] args ) throws InterruptedException
+    
+	public static void main( String[] args ) throws InterruptedException
     {
         // Initialize the driver property
     	
@@ -37,7 +39,7 @@ public class App
     	
     	//Invoke wait to load the application
     	
-    	driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     	
     	
     	
