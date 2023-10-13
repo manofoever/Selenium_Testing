@@ -37,9 +37,7 @@ public class App
     	
     	
     	chromeOptions.addArguments("--headless");
-    	chromeOptions.addArguments("--disable-dev-shm-usage");
-    	chromeOptions.addArguments("--ignore-ssl-errors=yes");
-    	chromeOptions.addArguments("--ignore-certificate-errors");
+    	
     	
     	
     	//Initialize the driver
