@@ -27,7 +27,8 @@ public class App
     	
     	//setup chrome parameters
     	
-    	WebDriverManager.chromedriver().setup();
+    	
+    	WebDriverManager.chromedriver().browserVersion("118.0.5993.71").setup();
     	
     	
     	
